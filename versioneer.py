@@ -1460,7 +1460,7 @@ def get_versions(verbose=False):
     # Hardcoding the version allows this to be built from a GitHub commit
     # tarball rather than having to trust a third party build process
 
-    override = "0.19.0.dev0+ncoghlan-py313-prerelease"
+    override = "0.18.7.dev0+ncoghlan-py313-prerelease"
     return {
         "version": override,
         "full-revisionid": override,
