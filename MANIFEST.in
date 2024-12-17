@@ -4,7 +4,6 @@ include msgspec/*.py
 include msgspec/*.pyi
 include msgspec/py.typed
 include setup.py
-include versioneer.py
 include README.md
 include LICENSE
 include MANIFEST.in

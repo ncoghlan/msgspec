@@ -4,8 +4,6 @@ import os
 from setuptools import setup
 from setuptools.extension import Extension
 
-import versioneer
-
 # Check for 32-bit windows builds, which currently aren't supported. We can't
 # rely on `platform.architecture` here since users can still run 32-bit python
 # builds on 64 bit architectures.
@@ -62,10 +60,22 @@ extras_require = {
     "dev": dev_deps,
 }
 
+# Override version info for a Python 3.13 compatible pre-release
+# that can be built from a GitHub source tarball
+#
+# This is an interim workaround while waiting for the next upstream release:
+#
+# * https://github.com/jcrist/msgspec/issues/764
+# * https://github.com/jcrist/msgspec/issues/777
+#
+# Hardcoding the version allows this to be built from a GitHub commit
+# tarball rather than having to trust a third party build process
+
+override_version = "0.18.7.dev0+ncoghlan-py313-prerelease"
+
 setup(
     name="msgspec",
-    version=versioneer.get_version(),
-    cmdclass=versioneer.get_cmdclass(),
+    version=override_version,
     maintainer="Jim Crist-Harif",
     maintainer_email="jcristharif@gmail.com",
     url="https://jcristharif.com/msgspec/",

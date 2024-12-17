@@ -3,7 +3,6 @@ exclude = [
     "*.pyi",
     "__init__.py",
     "_version.py",
-    "versioneer.py",
     "basic_typing_examples.py",
     "json.py",
     "msgpack.py",
