@@ -41,4 +41,4 @@ from . import structs
 # Hardcoding the version allows this to be built from a GitHub commit
 # tarball rather than having to trust a third party build process
 
-__version__ = "0.18.7.dev0+ncoghlan-py313-prerelease"
+__version__ = "0.18.7.dev1+ncoghlan-py313-prerelease"

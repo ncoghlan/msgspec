@@ -71,7 +71,7 @@ extras_require = {
 # Hardcoding the version allows this to be built from a GitHub commit
 # tarball rather than having to trust a third party build process
 
-override_version = "0.18.7.dev0+ncoghlan-py313-prerelease"
+override_version = "0.18.7.dev1+ncoghlan-py313-prerelease"
 
 setup(
     name="msgspec",
